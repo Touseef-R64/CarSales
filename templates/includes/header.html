@@ -1,0 +1,53 @@
+{% load static %}
+<section id='header' class='header-container'>
+  <div class="nav-top">
+    <ul class="nav-top-details">
+    <li>Japanese used cars exporter</li>
+    <li>Total Cars In Stock: 343,896</li>
+    <li> Added Today: 7,890</li> 
+    <li>Japan Time: 3:15 AM</li>
+  </ul>
+  <div class="nav-top-details">
+      <p>Currency: </p>
+      <select name="currency" id="currency">
+        <option value="USD">USD</option>
+        <option value="EURO">EURO</option>
+        <option value="POUNDS">POUNDS</option>
+        <option value="PKR">PKR</option>
+      </select>
+      <p>Language: </p>
+      <select name="language" id="language">
+        <option value="English">English</option>
+        <option value="german">german</option>
+        <option value="russian">russian</option>
+        <option value="japanese">japanese</option>
+      </select>
+  </div>
+  </div>
+  <div class="nav-bottom">
+      <div class="logo-container">
+        <img src="{% static '/assets/images/logo.svg' %}">
+      </div>
+      <div style="width: 100%; margin-left: 50px;">
+        <div class="search-block">
+          <div class="search-container">
+            <select class="search-options" name="search_type" id="search_type">
+              <option value="keyword">By Keyword</option>
+              <option value="ref">By reference</option>
+            </select>
+            <input type="text" placeholder="Search For Used Car" />
+            <div class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="heart-container">
+            <span><i class="fa-solid fa-heart"></i></span> Favorites
+          <p>1</p>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+
+</section>
